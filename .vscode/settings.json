@@ -1,0 +1,5 @@
+{
+  "python.analysis.extraPaths": ["./apps/api", "./packages"],
+  "python.testing.pytestEnabled": true,
+  "python.testing.unittestEnabled": false
+}
