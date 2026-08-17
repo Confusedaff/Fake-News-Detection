@@ -1,0 +1,5 @@
+{
+  "method": "temperature_scaling",
+  "temperature": 1.0,
+  "status": "TEMPLATE_ONLY_FIT_ON_VALIDATION_SET"
+}
