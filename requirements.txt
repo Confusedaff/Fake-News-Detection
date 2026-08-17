@@ -1,0 +1,19 @@
+# Core (required for everything, including the mock-only dev path)
+pydantic>=2.0
+pytest>=7.0
+
+# --- Real MVP implementations (Section 6) — install as each is wired in ---
+# Classifier + NLI verifier + CLIP consistency scorer
+# torch>=2.0
+# transformers>=4.30
+
+# Retrieval
+# faiss-cpu>=1.7
+# sentence-transformers>=2.2
+
+# Image validation / manipulation detection
+# Pillow>=10.0
+
+# API layer (not in services/, listed here for convenience)
+# fastapi>=0.110
+# uvicorn>=0.29
