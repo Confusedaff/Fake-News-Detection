@@ -1,0 +1,12 @@
+{
+  "model_name": "fake-news-classifier",
+  "model_version": "classifier-v1.0",
+  "base_model": "distilbert-base-uncased",
+  "dataset": "LIAR",
+  "dataset_version": "liar-v1",
+  "task": "fake_news_classification",
+  "max_length": 256,
+  "random_seed": 42,
+  "calibration_method": "temperature_scaling",
+  "status": "TEMPLATE_ONLY_NO_WEIGHTS"
+}
