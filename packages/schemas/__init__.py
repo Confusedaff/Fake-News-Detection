@@ -1,3 +1,8 @@
+from packages.schemas.classifier import (
+    ClassifierRequest,
+    ClassifierResponse,
+    Prediction,
+)
 from packages.schemas.contracts import (
     ClassificationResult,
     RetrievalChunk,
@@ -20,6 +25,9 @@ from packages.schemas.contracts import (
 )
 
 __all__ = [
+    "ClassifierRequest",
+    "ClassifierResponse",
+    "Prediction",
     "ClassificationResult",
     "RetrievalChunk",
     "RetrievalResult",
