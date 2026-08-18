@@ -1,0 +1,27 @@
+{
+  "dataset": "LIAR",
+  "source": "William Yang Wang, 'Liar, Liar Pants on Fire' (2017)",
+  "prepared_at_utc": "2026-08-18T03:10:30.047232+00:00",
+  "labels": [
+    "pants-fire",
+    "false",
+    "barely-true",
+    "half-true",
+    "mostly-true",
+    "true"
+  ],
+  "text_column": "statement",
+  "seed": 42,
+  "splits": {
+    "train": 10258,
+    "validation": 642,
+    "calibration": 642,
+    "test": 1283
+  },
+  "file_hashes": {
+    "train.csv": "436a343db08ff923",
+    "validation.csv": "e3460c2b6b87e446",
+    "calibration.csv": "a08f75295cf83ec1",
+    "test.csv": "fa462b4e37b802a1"
+  }
+}

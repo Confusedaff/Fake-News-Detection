@@ -1,0 +1,18 @@
+{
+  "label_to_id": {
+    "pants-fire": 0,
+    "false": 1,
+    "barely-true": 2,
+    "half-true": 3,
+    "mostly-true": 4,
+    "true": 5
+  },
+  "id_to_label": {
+    "0": "pants-fire",
+    "1": "false",
+    "2": "barely-true",
+    "3": "half-true",
+    "4": "mostly-true",
+    "5": "true"
+  }
+}

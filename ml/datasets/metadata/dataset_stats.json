@@ -1,0 +1,70 @@
+{
+  "train": {
+    "rows_in": 10269,
+    "rows_out": 10258,
+    "removed_malformed": 0,
+    "removed_dup": 11,
+    "removed_missing_text": 0,
+    "removed_unknown_label": 0,
+    "removed_bad_length": 0,
+    "label_counts": {
+      "half-true": 2121,
+      "false": 1991,
+      "mostly-true": 1966,
+      "true": 1681,
+      "barely-true": 1657,
+      "pants-fire": 842
+    }
+  },
+  "test": {
+    "rows_in": 1283,
+    "rows_out": 1283,
+    "removed_malformed": 0,
+    "removed_dup": 0,
+    "removed_missing_text": 0,
+    "removed_unknown_label": 0,
+    "removed_bad_length": 0,
+    "label_counts": {
+      "half-true": 267,
+      "false": 250,
+      "mostly-true": 249,
+      "barely-true": 214,
+      "true": 211,
+      "pants-fire": 92
+    }
+  },
+  "validation": {
+    "rows_in": 1284,
+    "rows_out": 642,
+    "removed_malformed": 0,
+    "removed_dup": 0,
+    "removed_missing_text": 0,
+    "removed_unknown_label": 0,
+    "removed_bad_length": 0,
+    "label_counts": {
+      "false": 132,
+      "mostly-true": 125,
+      "half-true": 124,
+      "barely-true": 119,
+      "true": 84,
+      "pants-fire": 58
+    }
+  },
+  "calibration": {
+    "rows_in": 1284,
+    "rows_out": 642,
+    "removed_malformed": 0,
+    "removed_dup": 0,
+    "removed_missing_text": 0,
+    "removed_unknown_label": 0,
+    "removed_bad_length": 0,
+    "label_counts": {
+      "false": 131,
+      "mostly-true": 126,
+      "half-true": 124,
+      "barely-true": 118,
+      "true": 85,
+      "pants-fire": 58
+    }
+  }
+}

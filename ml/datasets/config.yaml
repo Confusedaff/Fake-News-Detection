@@ -1,0 +1,68 @@
+# ml_classifier/datasets/config.yaml
+# Single source of truth for dataset paths and split behavior.
+# Paths are relative to project root (cog_project).
+
+raw_dir: team4_package/ml_classifier/datasets/datatset
+processed_dir: team4_package/ml_classifier/datasets/processed
+metadata_dir: team4_package/ml_classifier/datasets/metadata
+
+raw_files:
+  train: train.tsv
+  valid: valid.tsv
+  test: test.tsv
+
+# LIAR .tsv has no header row; these are the official column names in order.
+liar_columns:
+  - id
+  - label
+  - statement
+  - subject
+  - speaker
+  - job_title
+  - state_info
+  - party_affiliation
+  - barely_true_counts
+  - false_counts
+  - half_true_counts
+  - mostly_true_counts
+  - pants_on_fire_counts
+  - context
+
+# Columns we actually keep downstream (drop the rest to keep things lean).
+keep_columns:
+  - id
+  - statement
+  - label
+  - speaker
+  - party_affiliation
+  - subject
+  - context
+  # Speaker credibility history — strongest signal for 6-way LIAR accuracy.
+  - pants_on_fire_counts
+  - false_counts
+  - barely_true_counts
+  - half_true_counts
+  - mostly_true_counts
+
+text_column: statement
+label_column: label
+
+# Original 6-way LIAR taxonomy, fixed order = model class index order.
+# Keep every label as a string; YAML will otherwise coerce true/false into booleans.
+labels:
+  - "pants-fire"
+  - "false"
+  - "barely-true"
+  - "half-true"
+  - "mostly-true"
+  - "true"
+
+# We keep LIAR's own train/valid/test files as TRAIN and TEST.
+# LIAR's "valid" split is further divided into VALIDATION (model selection)
+# and CALIBRATION (temperature scaling / isotonic regression, used later
+# by the calibration step your friend owns in ml/models/).
+valid_split_for_calibration: 0.5   # fraction of LIAR "valid.tsv" reserved for calibration
+seed: 42
+
+min_statement_chars: 3
+max_statement_chars: 1000
