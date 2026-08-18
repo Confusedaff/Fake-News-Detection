@@ -1,0 +1,40 @@
+# ml_classifier/training/config.yaml
+# Paths are relative to project root (cog_project).
+
+model_name: roberta-base
+max_length: 256
+num_labels: 6
+
+data_dir: team4_package/ml_classifier/datasets/processed
+label_mapping_path: team4_package/ml_classifier/datasets/metadata/label_mapping.json
+output_dir: team4_package/ml_classifier/training/checkpoints
+
+seed: 42
+epochs: 4
+train_batch_size: 4
+eval_batch_size: 8
+gradient_accumulation_steps: 4   # effective batch size = 16
+learning_rate: 1.0e-5
+weight_decay: 0.01
+warmup_ratio: 0.06
+logging_steps: 50
+eval_strategy: epoch
+save_strategy: epoch
+load_best_model_at_end: true
+metric_for_best_model: eval_loss
+early_stopping_patience: 1
+use_class_weights: false
+use_metadata: true
+fp16: true
+
+dataloader_num_workers: 2
+
+# --- Calibration ---
+calibration_data_path: team4_package/ml_classifier/datasets/processed/calibration.csv
+calibration_batch_size: 16
+calibration_lr: 0.01
+calibration_max_iter: 50
+
+# --- Versioning / registry ---
+registry_dir: team4_package/ml_classifier/training/registry
+model_family: classifier
