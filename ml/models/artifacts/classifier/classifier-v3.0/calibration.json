@@ -1,0 +1,8 @@
+{
+  "method": "temperature_scaling",
+  "temperature": 1.226674199104309,
+  "ece_before": 0.06388120989190454,
+  "ece_after": 0.06312961050097445,
+  "calibration_set_size": 642,
+  "fitted_at_utc": "2026-08-18T03:30:35.469173+00:00"
+}

@@ -1,0 +1,42 @@
+{
+  "model_version": "classifier-v3.0",
+  "base_model": "roberta-base",
+  "dataset_version": "liar-fb152e49ba17",
+  "hyperparameters": {
+    "epochs": 4,
+    "learning_rate": 1e-05,
+    "train_batch_size": 4,
+    "eval_batch_size": 8,
+    "gradient_accumulation_steps": 4,
+    "max_length": 256,
+    "weight_decay": 0.01,
+    "warmup_steps": 153,
+    "use_class_weights": false,
+    "metric_for_best_model": "eval_loss",
+    "seed": 42,
+    "fp16": true
+  },
+  "validation_metrics": {
+    "eval_loss": 1.2798478603363037,
+    "eval_accuracy": 0.4719626168224299,
+    "eval_f1_macro": 0.4445523649311953,
+    "eval_runtime": 12.7846,
+    "eval_samples_per_second": 50.217,
+    "eval_steps_per_second": 6.336,
+    "epoch": 4.0
+  },
+  "calibration": {
+    "method": "temperature_scaling",
+    "temperature": 1.226674199104309,
+    "ece_before": 0.06388120989190454,
+    "ece_after": 0.06312961050097445
+  },
+  "artifact_hash": "252701c5af643e66",
+  "created_at_utc": "2026-08-18T03:30:47.923008+00:00",
+  "output_contract": [
+    "label",
+    "raw_logit_confidence",
+    "calibrated_probability",
+    "model_version"
+  ]
+}
