@@ -1,0 +1,521 @@
+{
+  "total_examples": 1283,
+  "errors": 722,
+  "error_rate": 0.5627435697583788,
+  "high_confidence_wrong_count": 23,
+  "low_confidence_correct_count": 308,
+  "confusion_pairs": [
+    {
+      "true_label": "half-true",
+      "predicted_label": "half-true",
+      "count": 133
+    },
+    {
+      "true_label": "false",
+      "predicted_label": "false",
+      "count": 129
+    },
+    {
+      "true_label": "mostly-true",
+      "predicted_label": "mostly-true",
+      "count": 127
+    },
+    {
+      "true_label": "barely-true",
+      "predicted_label": "barely-true",
+      "count": 86
+    },
+    {
+      "true_label": "mostly-true",
+      "predicted_label": "half-true",
+      "count": 70
+    },
+    {
+      "true_label": "true",
+      "predicted_label": "mostly-true",
+      "count": 70
+    },
+    {
+      "true_label": "half-true",
+      "predicted_label": "mostly-true",
+      "count": 61
+    },
+    {
+      "true_label": "pants-fire",
+      "predicted_label": "pants-fire",
+      "count": 53
+    },
+    {
+      "true_label": "barely-true",
+      "predicted_label": "half-true",
+      "count": 45
+    },
+    {
+      "true_label": "true",
+      "predicted_label": "half-true",
+      "count": 44
+    },
+    {
+      "true_label": "half-true",
+      "predicted_label": "false",
+      "count": 41
+    },
+    {
+      "true_label": "true",
+      "predicted_label": "false",
+      "count": 40
+    },
+    {
+      "true_label": "false",
+      "predicted_label": "mostly-true",
+      "count": 40
+    },
+    {
+      "true_label": "false",
+      "predicted_label": "half-true",
+      "count": 39
+    },
+    {
+      "true_label": "barely-true",
+      "predicted_label": "false",
+      "count": 39
+    },
+    {
+      "true_label": "barely-true",
+      "predicted_label": "mostly-true",
+      "count": 34
+    },
+    {
+      "true_label": "true",
+      "predicted_label": "true",
+      "count": 33
+    },
+    {
+      "true_label": "mostly-true",
+      "predicted_label": "false",
+      "count": 31
+    },
+    {
+      "true_label": "half-true",
+      "predicted_label": "barely-true",
+      "count": 29
+    },
+    {
+      "true_label": "false",
+      "predicted_label": "barely-true",
+      "count": 24
+    },
+    {
+      "true_label": "pants-fire",
+      "predicted_label": "false",
+      "count": 21
+    },
+    {
+      "true_label": "true",
+      "predicted_label": "barely-true",
+      "count": 20
+    },
+    {
+      "true_label": "mostly-true",
+      "predicted_label": "barely-true",
+      "count": 19
+    },
+    {
+      "true_label": "false",
+      "predicted_label": "pants-fire",
+      "count": 16
+    },
+    {
+      "true_label": "barely-true",
+      "predicted_label": "pants-fire",
+      "count": 10
+    },
+    {
+      "true_label": "pants-fire",
+      "predicted_label": "half-true",
+      "count": 9
+    },
+    {
+      "true_label": "pants-fire",
+      "predicted_label": "barely-true",
+      "count": 5
+    },
+    {
+      "true_label": "true",
+      "predicted_label": "pants-fire",
+      "count": 4
+    },
+    {
+      "true_label": "pants-fire",
+      "predicted_label": "mostly-true",
+      "count": 4
+    },
+    {
+      "true_label": "false",
+      "predicted_label": "true",
+      "count": 2
+    },
+    {
+      "true_label": "half-true",
+      "predicted_label": "pants-fire",
+      "count": 2
+    },
+    {
+      "true_label": "mostly-true",
+      "predicted_label": "pants-fire",
+      "count": 2
+    },
+    {
+      "true_label": "half-true",
+      "predicted_label": "true",
+      "count": 1
+    }
+  ],
+  "high_confidence_wrong": [
+    {
+      "sample_id": "11966.json",
+      "true_label": "false",
+      "true_label_id": "1",
+      "predicted_label": "barely-true",
+      "raw_confidence": 0.88469917,
+      "calibrated_probability": 0.8065792,
+      "probability_0": "0.0148943355",
+      "probability_1": "0.08520602",
+      "probability_2": "0.8065792",
+      "probability_3": "0.023962108",
+      "probability_4": "0.0077166683",
+      "probability_5": "0.06164172",
+      "correct": false
+    },
+    {
+      "sample_id": "8667.json",
+      "true_label": "true",
+      "true_label_id": "5",
+      "predicted_label": "false",
+      "raw_confidence": 0.9341204,
+      "calibrated_probability": 0.8733705,
+      "probability_0": "0.011988614",
+      "probability_1": "0.8733705",
+      "probability_2": "0.014880034",
+      "probability_3": "0.015125363",
+      "probability_4": "0.015523942",
+      "probability_5": "0.06911155",
+      "correct": false
+    },
+    {
+      "sample_id": "3107.json",
+      "true_label": "true",
+      "true_label_id": "5",
+      "predicted_label": "barely-true",
+      "raw_confidence": 0.9467124,
+      "calibrated_probability": 0.8920531,
+      "probability_0": "0.015908618",
+      "probability_1": "0.013165629",
+      "probability_2": "0.8920531",
+      "probability_3": "0.012208243",
+      "probability_4": "0.009101223",
+      "probability_5": "0.05756318",
+      "correct": false
+    },
+    {
+      "sample_id": "1251.json",
+      "true_label": "true",
+      "true_label_id": "5",
+      "predicted_label": "half-true",
+      "raw_confidence": 0.9382623,
+      "calibrated_probability": 0.8807301,
+      "probability_0": "0.006424381",
+      "probability_1": "0.011653149",
+      "probability_2": "0.017772866",
+      "probability_3": "0.8807301",
+      "probability_4": "0.015820803",
+      "probability_5": "0.06759869",
+      "correct": false
+    },
+    {
+      "sample_id": "2844.json",
+      "true_label": "half-true",
+      "true_label_id": "3",
+      "predicted_label": "true",
+      "raw_confidence": 0.9586261,
+      "calibrated_probability": 0.90657204,
+      "probability_0": "0.015769228",
+      "probability_1": "0.028713088",
+      "probability_2": "0.017653465",
+      "probability_3": "0.014679093",
+      "probability_4": "0.016613055",
+      "probability_5": "0.90657204",
+      "correct": false
+    },
+    {
+      "sample_id": "4708.json",
+      "true_label": "true",
+      "true_label_id": "5",
+      "predicted_label": "barely-true",
+      "raw_confidence": 0.9372715,
+      "calibrated_probability": 0.8794484,
+      "probability_0": "0.01611957",
+      "probability_1": "0.012755655",
+      "probability_2": "0.8794484",
+      "probability_3": "0.01243096",
+      "probability_4": "0.009272139",
+      "probability_5": "0.06997327",
+      "correct": false
+    },
+    {
+      "sample_id": "8683.json",
+      "true_label": "true",
+      "true_label_id": "5",
+      "predicted_label": "false",
+      "raw_confidence": 0.9279447,
+      "calibrated_probability": 0.8648295,
+      "probability_0": "0.01077268",
+      "probability_1": "0.8648295",
+      "probability_2": "0.01683878",
+      "probability_3": "0.016896455",
+      "probability_4": "0.015900781",
+      "probability_5": "0.07476186",
+      "correct": false
+    },
+    {
+      "sample_id": "4131.json",
+      "true_label": "true",
+      "true_label_id": "5",
+      "predicted_label": "false",
+      "raw_confidence": 0.92651486,
+      "calibrated_probability": 0.86386895,
+      "probability_0": "0.011430202",
+      "probability_1": "0.86386895",
+      "probability_2": "0.0143914865",
+      "probability_3": "0.015776206",
+      "probability_4": "0.015580011",
+      "probability_5": "0.078953095",
+      "correct": false
+    },
+    {
+      "sample_id": "1576.json",
+      "true_label": "true",
+      "true_label_id": "5",
+      "predicted_label": "half-true",
+      "raw_confidence": 0.93913066,
+      "calibrated_probability": 0.8815513,
+      "probability_0": "0.006381495",
+      "probability_1": "0.011891163",
+      "probability_2": "0.018764496",
+      "probability_3": "0.8815513",
+      "probability_4": "0.015974367",
+      "probability_5": "0.065437056",
+      "correct": false
+    },
+    {
+      "sample_id": "2568.json",
+      "true_label": "false",
+      "true_label_id": "1",
+      "predicted_label": "true",
+      "raw_confidence": 0.96059155,
+      "calibrated_probability": 0.9099374,
+      "probability_0": "0.017216496",
+      "probability_1": "0.02677725",
+      "probability_2": "0.017230548",
+      "probability_3": "0.013805533",
+      "probability_4": "0.015032807",
+      "probability_5": "0.9099374",
+      "correct": false
+    },
+    {
+      "sample_id": "11229.json",
+      "true_label": "true",
+      "true_label_id": "5",
+      "predicted_label": "false",
+      "raw_confidence": 0.9328747,
+      "calibrated_probability": 0.8714968,
+      "probability_0": "0.012934769",
+      "probability_1": "0.8714968",
+      "probability_2": "0.01469139",
+      "probability_3": "0.014861314",
+      "probability_4": "0.0159956",
+      "probability_5": "0.070020124",
+      "correct": false
+    },
+    {
+      "sample_id": "11925.json",
+      "true_label": "true",
+      "true_label_id": "5",
+      "predicted_label": "mostly-true",
+      "raw_confidence": 0.89621085,
+      "calibrated_probability": 0.8321784,
+      "probability_0": "0.007827694",
+      "probability_1": "0.013751255",
+      "probability_2": "0.01142711",
+      "probability_3": "0.012872625",
+      "probability_4": "0.8321784",
+      "probability_5": "0.12194288",
+      "correct": false
+    },
+    {
+      "sample_id": "7742.json",
+      "true_label": "false",
+      "true_label_id": "1",
+      "predicted_label": "true",
+      "raw_confidence": 0.95972943,
+      "calibrated_probability": 0.90822285,
+      "probability_0": "0.017446944",
+      "probability_1": "0.025152713",
+      "probability_2": "0.018579278",
+      "probability_3": "0.014021198",
+      "probability_4": "0.01657703",
+      "probability_5": "0.90822285",
+      "correct": false
+    },
+    {
+      "sample_id": "9192.json",
+      "true_label": "true",
+      "true_label_id": "5",
+      "predicted_label": "barely-true",
+      "raw_confidence": 0.95153093,
+      "calibrated_probability": 0.89869857,
+      "probability_0": "0.01693043",
+      "probability_1": "0.013708346",
+      "probability_2": "0.89869857",
+      "probability_3": "0.013243244",
+      "probability_4": "0.0073437337",
+      "probability_5": "0.05007558",
+      "correct": false
+    },
+    {
+      "sample_id": "6555.json",
+      "true_label": "true",
+      "true_label_id": "5",
+      "predicted_label": "barely-true",
+      "raw_confidence": 0.94787925,
+      "calibrated_probability": 0.8935393,
+      "probability_0": "0.017156685",
+      "probability_1": "0.013577593",
+      "probability_2": "0.8935393",
+      "probability_3": "0.012632869",
+      "probability_4": "0.007920918",
+      "probability_5": "0.055172592",
+      "correct": false
+    },
+    {
+      "sample_id": "8011.json",
+      "true_label": "true",
+      "true_label_id": "5",
+      "predicted_label": "half-true",
+      "raw_confidence": 0.93886936,
+      "calibrated_probability": 0.8814724,
+      "probability_0": "0.0066807223",
+      "probability_1": "0.011756395",
+      "probability_2": "0.01809172",
+      "probability_3": "0.8814724",
+      "probability_4": "0.015242065",
+      "probability_5": "0.06675669",
+      "correct": false
+    },
+    {
+      "sample_id": "11150.json",
+      "true_label": "true",
+      "true_label_id": "5",
+      "predicted_label": "mostly-true",
+      "raw_confidence": 0.9100188,
+      "calibrated_probability": 0.8482742,
+      "probability_0": "0.007392293",
+      "probability_1": "0.013608598",
+      "probability_2": "0.011331963",
+      "probability_3": "0.0121164825",
+      "probability_4": "0.8482742",
+      "probability_5": "0.10727642",
+      "correct": false
+    },
+    {
+      "sample_id": "5788.json",
+      "true_label": "true",
+      "true_label_id": "5",
+      "predicted_label": "barely-true",
+      "raw_confidence": 0.94468075,
+      "calibrated_probability": 0.88927704,
+      "probability_0": "0.016095618",
+      "probability_1": "0.012296272",
+      "probability_2": "0.88927704",
+      "probability_3": "0.012584077",
+      "probability_4": "0.009433658",
+      "probability_5": "0.06031337",
+      "correct": false
+    },
+    {
+      "sample_id": "574.json",
+      "true_label": "true",
+      "true_label_id": "5",
+      "predicted_label": "barely-true",
+      "raw_confidence": 0.95078814,
+      "calibrated_probability": 0.8979005,
+      "probability_0": "0.016165523",
+      "probability_1": "0.01328315",
+      "probability_2": "0.8979005",
+      "probability_3": "0.012605123",
+      "probability_4": "0.007855953",
+      "probability_5": "0.05218973",
+      "correct": false
+    },
+    {
+      "sample_id": "8557.json",
+      "true_label": "true",
+      "true_label_id": "5",
+      "predicted_label": "mostly-true",
+      "raw_confidence": 0.8984799,
+      "calibrated_probability": 0.835134,
+      "probability_0": "0.0067846333",
+      "probability_1": "0.013700605",
+      "probability_2": "0.010400946",
+      "probability_3": "0.013965484",
+      "probability_4": "0.835134",
+      "probability_5": "0.12001435",
+      "correct": false
+    },
+    {
+      "sample_id": "7665.json",
+      "true_label": "true",
+      "true_label_id": "5",
+      "predicted_label": "mostly-true",
+      "raw_confidence": 0.9006008,
+      "calibrated_probability": 0.837148,
+      "probability_0": "0.0073684687",
+      "probability_1": "0.01287393",
+      "probability_2": "0.01176465",
+      "probability_3": "0.013702175",
+      "probability_4": "0.837148",
+      "probability_5": "0.11714278",
+      "correct": false
+    },
+    {
+      "sample_id": "8576.json",
+      "true_label": "true",
+      "true_label_id": "5",
+      "predicted_label": "barely-true",
+      "raw_confidence": 0.9458124,
+      "calibrated_probability": 0.8906731,
+      "probability_0": "0.017276723",
+      "probability_1": "0.013804239",
+      "probability_2": "0.8906731",
+      "probability_3": "0.011902591",
+      "probability_4": "0.008362572",
+      "probability_5": "0.057980794",
+      "correct": false
+    },
+    {
+      "sample_id": "9241.json",
+      "true_label": "true",
+      "true_label_id": "5",
+      "predicted_label": "mostly-true",
+      "raw_confidence": 0.8761719,
+      "calibrated_probability": 0.8096816,
+      "probability_0": "0.0077320132",
+      "probability_1": "0.013508353",
+      "probability_2": "0.012901919",
+      "probability_3": "0.014237945",
+      "probability_4": "0.8096816",
+      "probability_5": "0.14193818",
+      "correct": false
+    }
+  ]
+}

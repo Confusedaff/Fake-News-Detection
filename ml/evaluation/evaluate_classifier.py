@@ -51,20 +51,22 @@ def main():
     )
 
     if prob_cols:
-        # true_label must be integer class IDs for this ECE implementation.
         try:
-            y_true_idx = df["true_label"].astype(int).to_numpy()
+            if "true_label_id" in df.columns:
+                y_true_idx = df["true_label_id"].astype(int).to_numpy()
+            else:
+                liar_order = ["pants-fire", "false", "barely-true", "half-true", "mostly-true", "true"]
+                label_to_idx = {l: i for i, l in enumerate(liar_order)}
+                y_true_idx = df["true_label"].map(label_to_idx).to_numpy()
+
             probs = df[prob_cols].to_numpy(float)
             ece, bins = expected_calibration_error(
                 y_true_idx, probs, n_bins=args.n_bins
             )
-            result["ece"] = ece
+            result["ece"] = float(ece)
             result["calibration_bins"] = bins
-        except ValueError:
-            result["ece_note"] = (
-                "ECE skipped because true_label is not integer class indices. "
-                "Provide class-index labels/probabilities for multiclass ECE."
-            )
+        except Exception as e:
+            result["ece_note"] = f"ECE error: {e}"
 
     output = Path(args.output_dir)
     output.mkdir(parents=True, exist_ok=True)
